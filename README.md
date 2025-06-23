@@ -1,3 +1,2 @@
-# Contract Decoder
+# Moonwell
 
-This app will decode all events emitted by the targeted contract.
