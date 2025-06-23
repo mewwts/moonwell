@@ -8,10 +8,10 @@ contract Triggers is BaseTriggers {
     function triggers() external virtual override {
         Listener listener = new Listener();
         addTriggers(
-            ChainIdContract(1, 0x1F98431c8aD98523631AE4a59f267346ea31F984),
+            ChainIdContract(8453, 0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22),
             listener.allTriggers()
         );
     }
 }
 
-contract Listener is UniswapV3Factory$EmitAllEvents {}
+contract Listener is mUSDC$EmitAllEvents {}
